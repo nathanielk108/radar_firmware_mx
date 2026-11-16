@@ -61,6 +61,8 @@
 void SystemClock_Config(void);
 static void MPU_Config(void);
 /* USER CODE BEGIN PFP */
+void SystemClock_Config_Exp(void);
+void MPU_Config_Exp(void);
 
 /* USER CODE END PFP */
 
@@ -133,6 +135,13 @@ void SystemClock_Config(void)
 }
 
 /* USER CODE BEGIN 4 */
+void SystemClockConfig_Exp(void) {
+  SystemClock_Config();
+}
+
+void MPU_Config_Exp(void) {
+  MPU_Config();
+}
 
 /* USER CODE END 4 */
 

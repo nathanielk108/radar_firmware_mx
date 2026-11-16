@@ -242,7 +242,17 @@ SECTIONS
     . = ALIGN(8);
   } >DTCMRAM
 
+  .dma_buffer (NOLOAD) :
+  {
+    . = ALIGN(32);
+    __dma_start__ = .;
+    *(.dma_buffer)
+    *(.dma_buffer.*)
+    . = ALIGN(32);
+    __dma_end__ = .;
+  } > DMA_RAM
 
+  ASSERT(SIZEOF(.dma_buffer) <= LENGTH(DMA_RAM), "DMA buffers exceed reserved D2 SRAM")
 
   /* Remove information from the standard libraries */
   /DISCARD/ :

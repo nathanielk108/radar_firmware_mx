@@ -129,7 +129,7 @@ static void HAL_FMC_MspInit(void){
   */
   /* GPIO_InitStruct */
   GPIO_InitStruct.Pin = DISPLAY_D4_Pin|DISPLAY_D5_Pin|DISPLAY_D6_Pin|DISPLAY_D7_Pin
-                          |DISPALY_D8_Pin|DISPLAY_D9_Pin|DISPLAY_D10_Pin|DISPLAY_D11_Pin
+                          |DISPLAY_D8_Pin|DISPLAY_D9_Pin|DISPLAY_D10_Pin|DISPLAY_D11_Pin
                           |DISPLAY_D12_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
@@ -201,7 +201,7 @@ static void HAL_FMC_MspDeInit(void){
   */
 
   HAL_GPIO_DeInit(GPIOE, DISPLAY_D4_Pin|DISPLAY_D5_Pin|DISPLAY_D6_Pin|DISPLAY_D7_Pin
-                          |DISPALY_D8_Pin|DISPLAY_D9_Pin|DISPLAY_D10_Pin|DISPLAY_D11_Pin
+                          |DISPLAY_D8_Pin|DISPLAY_D9_Pin|DISPLAY_D10_Pin|DISPLAY_D11_Pin
                           |DISPLAY_D12_Pin);
 
   HAL_GPIO_DeInit(GPIOD, DISPLAY_D13_Pin|DISPLAY_D14_Pin|DISPLAY_D15_Pin|DISPLAY_A__Pin

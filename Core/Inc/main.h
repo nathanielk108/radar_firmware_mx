@@ -67,7 +67,8 @@ extern "C" {
 void Error_Handler(void);
 
 /* USER CODE BEGIN EFP */
-
+void SystemClock_Config_Exp(void);
+void MPU_Config_Exp(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
@@ -135,8 +136,8 @@ void Error_Handler(void);
 #define DISPLAY_D6_GPIO_Port GPIOE
 #define DISPLAY_D7_Pin GPIO_PIN_10
 #define DISPLAY_D7_GPIO_Port GPIOE
-#define DISPALY_D8_Pin GPIO_PIN_11
-#define DISPALY_D8_GPIO_Port GPIOE
+#define DISPLAY_D8_Pin GPIO_PIN_11
+#define DISPLAY_D8_GPIO_Port GPIOE
 #define DISPLAY_D9_Pin GPIO_PIN_12
 #define DISPLAY_D9_GPIO_Port GPIOE
 #define DISPLAY_D10_Pin GPIO_PIN_13
